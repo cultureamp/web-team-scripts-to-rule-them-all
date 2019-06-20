@@ -1,5 +1,7 @@
 # (Icelab’s) Scripts To Rule Them All
 
+_bash nazg gimbatul_
+
 This is our set of boilerplate scripts fulfilling the [normalized script
 pattern][pattern], based on [GitHub’s own scripts][upstream].
 
