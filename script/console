@@ -9,19 +9,18 @@ set -e
 cd "$(dirname "$0")/.."
 
 if [ -n "$1" ]; then
-  # use first argument as an environment name. Use this to decide how to connect
+  # Use first argument as an environment name. Use this to decide how to connect
   # to the appropriate console.
   if [ "$1" = "production" ]; then
-    heroku run rails console --app heroku-app-name
+    heroku run ./bin/run console --app heroku-app-name
   elif [ "$1" = "staging" ]; then
-    heroku run rails console --app heroku-app-name-staging
+    heroku run ./bin/run console --app heroku-app-name-staging
   else
     echo "Sorry, I don't know how to connect to the '$1' environment."
     exit 1
   fi
 else
-  # no argument provided, so just run the local console in the development
-  # environment. Ensure the application is up to date first.
-  script/update
-  bin/rails console
+  # No argument provided, so just run the local console in the development
+  # environment.
+  ./bin/run console
 fi
