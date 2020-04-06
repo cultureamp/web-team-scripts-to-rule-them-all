@@ -1,4 +1,4 @@
-# (Icelab’s) Scripts To Rule Them All
+# (Culture Amp Web Team’s) Scripts To Rule Them All
 
 _bash nazg gimbatul_
 
@@ -24,14 +24,15 @@ given script.
 ## Requirements
 
 These scripts are intended to work with [Homebrew][brew], [Homebrew
-Bundle][brew-bundle], and our [icelab/devtools][devtools] Homebrew tap.
+Bundle][brew-bundle], and our [cultureamp/web-team-devtools][devtools] Homebrew
+tap.
 
 When installing the scripts, also copy this [`Brewfile`][brewfile] into the root
 of the project
 
 [brew]: https://brew.sh
 [brew-bundle]: https://github.com/Homebrew/homebrew-bundle
-[devtools]: https://github.com/icelab/homebrew-devtools
+[devtools]: https://github.com/cultureamp/homebrew-web-team-devtools
 [brewfile]: support/Brewfile
 
 ## The scripts
