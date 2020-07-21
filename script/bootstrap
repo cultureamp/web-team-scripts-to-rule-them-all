@@ -27,6 +27,11 @@ if [ -f "Gemfile" ]; then
 fi
 
 if [ -f "package.json" ]; then
+  if ! command -v yarn >/dev/null; then
+    echo "==> Installing yarn…"
+    npm install -g yarn
+  fi
+
   echo "==> Installing node packages…"
   yarn
 fi
